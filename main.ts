@@ -1,21 +1,8 @@
-input.onButtonPressed(Button.A, function () {
-    basic.showLeds(`
-        # . . . .
-        . # . . .
-        . . # . .
-        . . . # .
-        . . . . #
-        `)
-})
-input.onButtonPressed(Button.B, function () {
-    basic.showLeds(`
-        . . . . #
-        . . . # .
-        . . # . .
-        . # . . .
-        # . . . .
-        `)
-})
+let reading = 0
 basic.forever(function () {
-	
+    reading = input.lightLevel()
+    led.plotBarGraph(
+    reading,
+    255
+    )
 })
