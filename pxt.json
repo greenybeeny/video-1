@@ -1,5 +1,5 @@
 {
-    "name": "video 1",
+    "name": "LEDs on microbit",
     "description": "",
     "dependencies": {
         "core": "*",
